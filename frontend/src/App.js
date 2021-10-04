@@ -31,7 +31,9 @@ class App extends React.Component {
     if (count > 20) {
       newData = newData.slice(1)
     }
-    newData.push({value: recv.value, index: count})
+    var to_push = {value: recv.value, index: count}
+    console.log(to_push)
+    newData.push(to_push)
     this.setState({data: newData, count: count + 1})
   }
 
