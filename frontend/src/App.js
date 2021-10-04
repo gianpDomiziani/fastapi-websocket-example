@@ -40,7 +40,7 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <h2>
-            WebSocket Example
+            WebSocket Example: real-time chart
           </h2>
           <AreaChart width={900} height={600} data={this.state.data}>
             <defs>
